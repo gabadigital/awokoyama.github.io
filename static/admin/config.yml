@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+collections:
+
+  - name: 'Tributes'
+    label: 'Tributes'
+    folder: 'content/tributes/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'Title', widget: 'string' }
+      - { label: 'Tribute Title', name: 'tributeTitle', widget: 'string' }
+      - { label: 'Name of Person', name: 'pastorsName', widget: 'string' }
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Summary Heading', name: 'summaryHeading', widget: 'string' }
+      - { label: 'Summary Content', name: 'summaryParagraph', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Title', name: 'tributeTitle', widget: 'string' }
