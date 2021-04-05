@@ -1,0 +1,88 @@
+<div class="b-tribute-container">
+
+      <div data-w-id="6e02c011-c8ca-9106-9d12-59d6c73e8a22" class="filters-wrapper">
+        <div class="filter-group">
+          <a href="#" class="lnk-filter all filter-reset-master">All tributes</a>
+          <a filter-by="missionary" href="#" class="lnk-filter missionary">Missionary</a>
+          <a filter-by="Family" href="#" class="lnk-filter family">Family</a>
+          <a filter-by="friend" href="#" class="lnk-filter friend">Friend</a>
+          <a filter-by="colleague" href="#" class="lnk-filter colleague">Colleague</a>
+        </div>
+        <div class="filter-search">
+          <div class="location-wrap-drop">
+            <div data-w-id="48f18e00-6e33-2980-04f8-aac91376e5a3" class="location-drop">
+              <div class="loction-txt">View by location</div>
+              <div class="drop">󰅀</div>
+            </div>
+            <div style="display:none" class="location-dropdown">
+              <div filter-by="Tchad" class="location-link-rel">
+                <div>Sudan</div>
+              </div>
+              <div filter-by="UK" class="location-link-rel">
+                <div>UK</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" class="form-search"><input type="text" class="text-field w-input" maxlength="256" name="name" filter-by="*" data-name="Name" placeholder="search for a tribute" id="name">
+              <div class="div-block-3">
+                <div>󰍉</div>
+              </div>
+            </form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection tribute container -->
+      <div class="b-container">
+            <div>
+            <div class="w-layout-grid collection-list">
+
+              {{$tributes := .Site.GetPage "/tributes"}}
+              {{$Reusabletributes := $tributes.Resources.ByType "page"}}
+              {{range $Reusabletributes}}
+                <div class="item-tributes-wrap">
+                <div class="tributehead-wrap-top">
+                  <h1 class="h3-tribute">{{.Params.summaryHeading}}</h1>
+                  <div class="sm-txt-tribute">by {{.Params.pastorsName}}, {{.Params.location}}.</div>
+                </div>
+                <p>{{.Params.summaryParagraph}}</p>
+                <div data-w-id="a88ddf2b-5f24-f5a6-55cd-426e3c83523e" class="read-more-div">
+                  <div class="btn-read-more">
+                    <div class="read-more-txt">read more</div>
+                    <div class="arrow-main">󰁃</div>
+                  </div>
+                </div>
+                <div class="b-open-tribute-abs">
+                  <div class="b-tribute-white">
+                    <div data-w-id="dc20ec15-4b92-b5be-489d-747eae86b1fe" class="close-tribute-open">
+                      <div>󰅖</div>
+                    </div>
+                    <div class="b-tribute-heading-top">
+                      <h2 class="h2-pages">{{.Params.tributeTitle}}</h2>
+                      <div class="sm-txt-tribute tr-open">by {{.Params.pastorsName}}, {{.Params.location}}.</div>
+                    </div>
+                    <p>{{.Content}}</p>
+                    <div class="btn-top-div pages">
+                      <a href="leave-a-tribute.html" class="lnk-btn pages w-inline-block">
+                        <div class="txt-btn">write your tribute story</div>
+                        <div class="arrow-btn">󰅂</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              {{end}}
+            </div>
+          </div>
+      </div>
+      <!-- Collection tribute container ends -->
+
+
+    </div>

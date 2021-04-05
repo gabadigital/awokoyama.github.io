@@ -1,0 +1,13 @@
+{{define "main"}}
+
+  {{partial "slider-header.html" . }}
+    <div data-w-id="{{.Params.id}}" class="all-page">
+      <div class="abs-complete-cover"></div>
+      {{partial "notablereflection.html" .}}
+    </div>
+  {{ partial "tributes.html" .}}
+
+  {{ partial "filter.html" .}}
+  
+
+{{end}}

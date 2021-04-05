@@ -1,0 +1,87 @@
+{{ define "main" }}
+<div data-w-id="{{.Params.id}}" class="all-page">
+  <!--Code for Service of songs video 1-->
+  <div class="sub-pages memorial">
+    <div class="b-single-page-memoir">
+      <div class="vid-top">
+        {{$memorialItems := .Site.GetPage "/memorialBlock"}}
+        {{$reusableMemorial := $memorialItems.Resources.Match "ServiceOfSongs.md"}}
+        {{range $reusableMemorial}}
+        <a href="#" class="lightbox-link memorialcoverage w-inline-block w-lightbox">
+          <div class="play-btn coverage">
+            <div>󰐊</div>
+          </div><img src="/images/wake-keep-vid-thumbnail.jpg" loading="lazy" sizes="90vw" srcset="/images/wake-keep-vid-thumbnail-p-500.jpeg 500w, /images/wake-keep-vid-thumbnail.jpg 1090w" alt="" class="lightbox-img">
+          <div class="abs-lightbox memor-coverage"></div>
+          <div class="txt-memor-headers">
+            <h1 class="memor-txt">{{.Params.ServiceOfSongs}}</h1>
+          </div>
+          <script type="application/json" class="w-json">{
+"items": [
+  {
+    "type": "video",
+    "originalUrl": "https://www.youtube.com/watch?v={{.Params.youtubeId}}",
+    "url": "https://www.youtube.com/watch?v={{.Params.youtubeId}}",
+    "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F{{.Params.youtubeId}}%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{{.Params.youtubeId}}&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F{{.Params.youtubeId}}%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+    "thumbnailUrl": "https://i.ytimg.com/vi/{{.Params.youtubeId}}/hqdefault.jpg",
+    "width": 940,
+    "height": 528
+  }
+]
+}</script>
+        </a>
+        {{end}}
+      </div>
+    </div>
+  </div>
+  <!--Code for ServiceOfSongs end-->
+
+  <!-- Code for MemorialVideo -->
+  <div class="memor-div-below">
+      <div class="programsheet-wrap"><img src="/images/programsheet.png" loading="lazy" width="202" alt="" class="prg-sheet">
+        <div class="booklet-download-div">
+          <div class="p">Honoring the life of Pastor Awokoya Mathew Akinyele fondly known as Desert Warrior. Read his Biography and heart-felt tributes.</div>
+        </div>
+        <div class="btn-top-div sub">
+          <a href="leave-a-tribute.html" class="lnk-btn sub w-inline-block">
+            <div class="txt-btn">download booklet</div>
+            <div class="arrow-btn">󰅂</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="b-single-page-memoir">
+        <div class="vid-top memor">
+          {{$memorialItems := .Site.GetPage "/memorialBlock"}}
+          {{$reusableMemorial := $memorialItems.Resources.Match "ServiceOfSongs.md"}}
+          {{range $reusableMemorial}}
+          <a href="#" class="lightbox-link memorialcoverage w-inline-block w-lightbox">
+            <div class="play-btn coverage">
+              <div>󰐊</div>
+            </div><img src="{{.Params.image}}" loading="lazy" sizes="90vw" alt="" class="lightbox-img">
+            <div class="abs-lightbox memor-coverage"></div>
+            <div class="txt-memor-headers">
+              <h1 class="memor-txt">funeral service</h1>
+            </div>
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "type": "video",
+      "originalUrl": "https://www.youtube.com/watch?v=-cIke7PHJIA",
+      "url": "https://www.youtube.com/watch?v=-cIke7PHJIA",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F-cIke7PHJIA%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-cIke7PHJIA&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-cIke7PHJIA%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-cIke7PHJIA/hqdefault.jpg",
+      "width": 940,
+      "height": 528
+    }
+  ]
+  }</script>
+          </a>
+          {{end}}
+        </div>
+      </div>
+
+  </div>
+  <!-- Code for MemorialVideo end-->
+
+</div>
+{{ end }}

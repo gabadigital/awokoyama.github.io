@@ -1,0 +1,30 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+# Menu config
+[menu]
+
+  [[menu.mainmenu]]
+    identifier = "memoirs"
+    name = "Memories & Condolences"
+    url = "/memories-and-condolences/"
+    weight = "1"
+
+  [[menu.mainmenu]]
+    identifier = "hislife"
+    name = "His life"
+    url = "/his-life/"
+    weight = "2"
+
+  [[menu.mainmenu]]
+    identifier = "coverage"
+    name = "Memorial Coverage"
+    url = "/memorial-coverage/"
+    weight = "3"
+
+# Params
+[Params]
+    logo = "/images/Awokoya-Matthew-Logo-White.png"
+    alt = "Awokoya Mathew Logo"
+    favicon = "/images/favicon.png/"

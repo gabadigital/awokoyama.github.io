@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div data-w-id="{{.Params.id}}" class="all-page">
+  <div class="abs-complete-cover"></div>
+
+  <div class="sub-pages tribute1">
+    <div class="b-tribute-white full">
+
+      {{partial "go-back.html" .}}
+      <div class="b-tribute-heading-top">
+        <h1 class="h2-pages">leave a tribute or testimony</h1>
+      </div>
+      {{partial "form.html" .}}
+    </div>
+  </div>
+
+</div>
+
+{{ end }}

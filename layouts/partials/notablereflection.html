@@ -1,0 +1,41 @@
+<div class="b-reflection">
+  <div class="b-container">
+    <div class="notable">
+      <div class="b-notable-div">
+        {{with .GetPage "/notableReflec/index.md"}}
+        <h2 class="h2">{{.Params.sectionName}}</h2>
+        {{end}}
+        <div class="line-notable-reflec"></div>
+      </div>
+
+
+      <div data-animation="slide" data-duration="500" data-infinite="1" class="b-notable-slide-content w-slider">
+        <div class="w-slider-mask">
+
+          {{ $notableReflec := .Site.GetPage "/notableReflec"}}
+          {{ $reusablereflec := $notableReflec.Resources.ByType "page"}}
+          {{ range $reusablereflec}}
+          <div class="w-slide">
+            <div class="b-notable-reflec-wrap">
+              <p> &quot; {{.Content}} &quot;</p>
+              <div class="reflection-author">
+                <div class="name-pastor">{{.Params.pastorName}},</div>
+                <div class="pastor-loc">{{.Params.location}}</div>
+              </div>
+            </div>
+          </div>
+          {{end}}
+
+        <div class="kill w-slider-arrow-left">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="kill w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

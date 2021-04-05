@@ -1,0 +1,71 @@
+      <a href="/" class="homepage-back w-inline-block">
+        <div><span class="text-span">󰅁</span>Go back to homepage</div>
+      </a>
+      <div class="b-tribute-heading-top">
+        <h1 class="h2-pages">memories &amp; condolences</h1>
+      </div>
+      <div class="b-intro-contact">
+        <p>Many lives have been impacted around the world through the life and ministry of Pastor Awokoya Matthew. God has used his ministry to raise up Pastors, Missionaries, Evangelist, Prophets and more. Miracles of child bearing, turbulence marriages restored, exponential career growth, healing from terminal disease and most importantly to him salvation of the heart from sin.<br><br>Read and watch some of the beautiful testimonies shared below. And perhaps you have a testimony to share too, you can share your testimony here.</p>
+      </div>
+
+
+        <div class="b-testimony">
+
+        {{ $testimony := .Site.GetPage "/testimony"}}
+        {{ $reusableTestimony := $testimony.Resources.ByType "page"}}
+        {{range $reusableTestimony}}
+          <div class="item-testimony">
+
+          {{$image := .Params.image}}
+          {{$youtube := .Params.youtubeId}}
+          {{$testimony := .Params.testimonyHeading}}
+          {{$nameofTestifier := .Params.nameofTestifier}}
+          {{$location := .Params.location}}
+          {{with .Params.youtubeId}}
+          <a href="#" class="lightbox-link w-inline-block w-lightbox">
+            <div class="play-btn">
+              <div>󰐊</div>
+            </div><img src="{{$image}}" loading="lazy" sizes="(max-width: 991px) 80vw, 100vw" alt="" class="memoir-image">
+            <div class="abs-lightbox">
+              <div class="e-memr-bl">
+                <h2 class="h3-testimony">{{$testimony}}</h2>
+                <div class="sm-txt-tribute white">by {{$nameofTestifier}} , {{$location}} .</div>
+              </div>
+            </div>
+
+            <script type="application/json" class="w-json">{
+          "items": [
+          {
+          "type": "video",
+          "originalUrl": "https://www.youtube.com/watch?v={{$youtube}}",
+          "url": "https://www.youtube.com/watch?v={{$youtube}}",
+          "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F{{$youtube}}%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{{$youtube}}&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F{{$youtube}}%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+          "thumbnailUrl": "https://i.ytimg.com/vi/{{$youtube}}/hqdefault.jpg",
+          "width": 940,
+          "height": 528
+          }
+          ]
+          }</script>
+
+          </a>
+          {{ else }}
+          <div class="eb-novid">
+            <div class="e-memr-bl">
+              <h2 class="h3-testimony">{{$testimony}}</h2>
+              <div class="sm-txt-tribute white">by {{$nameofTestifier}} , {{$location}}.</div>
+            </div>
+          </div>
+          {{end}}
+          <p>{{.Params.summaryParagraph}}</p>
+          <a href="page-memories.html" class="read-more-div red-top w-inline-block">
+            <div class="btn-read-more">
+              <div class="read-more-txt">read more</div>
+              <div class="arrow-main">󰁃</div>
+            </div>
+          </a>
+          </div>
+
+        {{end}}
+
+
+        </div>
