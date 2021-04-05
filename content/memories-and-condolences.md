@@ -1,0 +1,4 @@
+---
+layout: "memories"
+type: "pages"
+---
