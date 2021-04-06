@@ -19,8 +19,4 @@ collections:
       - { label: 'Summary Heading', name: 'summaryHeading', widget: 'string' }
       - { label: 'Summary Content', name: 'summaryParagraph', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
-        allow_add: true
-        default: ["friend"]
+      - {label: 'Categories', name: "categories", widget: "list"}
