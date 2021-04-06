@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Olaki Tribute - South Sudan
-tributeTitle: TRIBUTE TO One of the greatest missionaries of our time
+tributeTitle: TRIBUTE To One of the greatest missionaries of our time
 pastorsName: Pastor Moses Olaki
 location: South Sudan
 summaryParagraph: I have never met such a committed servant of God like Daddy
