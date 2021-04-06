@@ -22,5 +22,5 @@ collections:
       - label: "Categories"
         name: "categories"
         widget: "list"
-        allow_add: false
+        allow_add: true
         default: ["friend"]
