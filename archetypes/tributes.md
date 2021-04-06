@@ -1,5 +1,5 @@
 ---
-Title: "Tribute"
+title: "{{ replace .Name "-" " " | title }}
 summaryHeading: ""
 summaryParagraph: ""
 headless: true

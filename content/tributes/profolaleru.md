@@ -1,5 +1,5 @@
 ---
-Title: "Tribute Olaleru"
+title: "Tribute Olaleru"
 draft: false
 pastorsName: "Prof. Olaleru"
 location: "Mathematics Department – UNILAG"
