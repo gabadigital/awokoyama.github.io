@@ -12,4 +12,10 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Title', name: 'Title', widget: 'string' }
       - { label: 'Tribute Title', name: 'tributeTitle', widget: 'string' }
+      - { label: 'Name of Person', name: 'pastorsName', widget: 'string' }
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Summary Heading', name: 'summaryHeading', widget: 'string' }
+      - { label: 'Summary Content', name: 'summaryParagraph', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
