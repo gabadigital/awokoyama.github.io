@@ -1,6 +1,6 @@
 ---
 draft: false
-Title: Tribute Solomon
+Title: Tribute Pastor Solomon (SO)
 tributeTitle: TRIBUTE TO MY BROTHER AND FRIEND PASTOR MATHEW AWOKOYA
 pastorsName: Pastor Solomon B. Adeleye
 location: DLBC, PRAIA, Cape Verde
