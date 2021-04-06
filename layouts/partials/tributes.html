@@ -1,6 +1,7 @@
 <div class="b-tribute-container">
 
       <div data-w-id="6e02c011-c8ca-9106-9d12-59d6c73e8a22" class="filters-wrapper">
+
         <div class="filter-group">
           <a href="#" class="lnk-filter all filter-reset-master">All tributes</a>
           <a filter-by="missionary" href="#" class="lnk-filter missionary">Missionary</a>
@@ -8,6 +9,7 @@
           <a filter-by="friend" href="#" class="lnk-filter friend">Friend</a>
           <a filter-by="colleague" href="#" class="lnk-filter colleague">Colleague</a>
         </div>
+
         <div class="filter-search">
           <div class="location-wrap-drop">
             <div data-w-id="48f18e00-6e33-2980-04f8-aac91376e5a3" class="location-drop">
@@ -68,6 +70,7 @@
                       <h2 class="h2-pages">{{.Params.tributeTitle}}</h2>
                       <div class="sm-txt-tribute tr-open">by {{.Params.pastorsName}}, {{.Params.location}}.</div>
                     </div>
+                    {{.Params.categories}}
                     <p>{{.Content}}</p>
                     <div class="btn-top-div pages">
                       <a href="leave-a-tribute.html" class="lnk-btn pages w-inline-block">
