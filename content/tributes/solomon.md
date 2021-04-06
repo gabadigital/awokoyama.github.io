@@ -12,7 +12,7 @@ summaryParagraph: We believe he fought a good fight throughout his sojourn here
 headless: true
 summaryHeading: A true friend to me
 categories:
-  - friend
+  - Missionary
 ---
 
 We learnt with shock the passing on of "the old soldier", our dear Pastor Mathew Awokoya in Lagos in the wee hours of Saturday 12 of December, 2020.
