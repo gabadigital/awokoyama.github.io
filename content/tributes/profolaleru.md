@@ -1,12 +1,13 @@
 ---
 draft: false
-Title: Prof Olaleru - Pastor DLCF
+title: Prof Olaleru - UNILAG
 tributeTitle: TRIBUTE TO One of the greatest missionaries of our time
 pastorsName: Prof. Olaleru
 location: Mathematics Department – UNILAG
 summaryParagraph: One of the most rugged soldiers of the cross that ever lived.
   He has paid his dues and left the baton to whosoever wishes to follow a good
   and eternally rewarding step.
+Title: Prof Olaleru - Pastor DLCF
 headless: true
 summaryHeading: One of the greatest missionaries of our time
 categories:
