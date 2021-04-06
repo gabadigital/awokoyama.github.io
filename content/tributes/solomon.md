@@ -1,11 +1,15 @@
 ---
-Title: ""
 draft: false
-pastorsName: "Pastor Solomon B. Adeleye"
-location: "DLBC, PRAIA, Cape Verde"
-summaryHeading: "A true friend to me"
-summaryParagraph: "We believe he fought a good fight throughout his sojourn here on earth. His was an unalloyed commitment to the cause of Christ from start to finish. Apart from Biblical characters, he also has left sterling examples of uncommon missionary zeal for us to emulate. We will miss him for his rare and unpretended relationship with the younger Pastors and missionaries."
-tributeTitle: "TRIBUTE TO MY BROTHER AND FRIEND PASTOR MATHEW AWOKOYA"
+Title: Tribute Solomon
+tributeTitle: TRIBUTE TO MY BROTHER AND FRIEND PASTOR MATHEW AWOKOYA
+pastorsName: Pastor Solomon B. Adeleye
+location: DLBC, PRAIA, Cape Verde
+summaryHeading: A true friend to me
+summaryParagraph: We believe he fought a good fight throughout his sojourn here
+  on earth. His was an unalloyed commitment to the cause of Christ from start to
+  finish. Apart from Biblical characters, he also has left sterling examples of
+  uncommon missionary zeal for us to emulate. We will miss him for his rare and
+  unpretended relationship with the younger Pastors and missionaries.
 headless: true
 ---
 
