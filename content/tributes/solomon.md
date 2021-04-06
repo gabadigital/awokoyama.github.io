@@ -1,5 +1,5 @@
 ---
-Title: ""
+Title: "Tribute Solomon"
 draft: false
 pastorsName: "Pastor Solomon B. Adeleye"
 location: "DLBC, PRAIA, Cape Verde"

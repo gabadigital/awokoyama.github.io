@@ -1,5 +1,5 @@
 ---
-Title: ""
+Title: "Tribute Moses Olaki"
 draft: false
 pastorsName: "Pastor Moses Olaki"
 location: "South Sudan"
