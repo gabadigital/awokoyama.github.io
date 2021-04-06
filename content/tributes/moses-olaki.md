@@ -1,12 +1,13 @@
 ---
 draft: false
-Title: Tribute Moses Olaki
+title: Olaki Tribute - South Sudan
 tributeTitle: TRIBUTE TO One of the greatest missionaries of our time
 pastorsName: Pastor Moses Olaki
 location: South Sudan
 summaryParagraph: I have never met such a committed servant of God like Daddy
   Awokoya Mathew. He lived more spiritually than human because he spent more
   time nourishing his spirit man than eating physical food.
+Title: Tribute Moses Olaki
 headless: true
 summaryHeading: such a committed servant of God
 categories:
